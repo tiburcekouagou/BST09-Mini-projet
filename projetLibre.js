@@ -26,6 +26,11 @@ const objetsMangas = [
     {id: 25, img: "./image/R.jpg", name: "Inconnu " },
 ]
 
-for (let i = 0; i< objetsMangas.lenght; i++){
-    document.write(objetsMangas[i].img)
-}
+//Un Mouse over qui met les titres h2 en japonais.
+
+function mOver(obj, str) {
+    obj.innerHTML = str
+  }
+  function mOut(obj, str) {
+    obj.innerHTML = str
+  }
