@@ -1,0 +1,36 @@
+h2 {
+    font-size: 3em;
+    color: darkblue;
+}
+
+img {
+    max-width: 100%;
+    width: 500px;
+    height: 300px;
+    font-size: cover;
+}
+
+nav {
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+	background-color: #e4f0f5;
+    text-decoration: none;
+	color: #000;
+	padding: 1rem;
+	border-radius: .5rem;
+	font: 1em monospace;
+	width: 100%;
+	transition: background-color 1s;
+}
+
+a:hover {
+	background-color: #909;
+	color: #fff;
+	margin-right: 40%;
+}
