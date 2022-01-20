@@ -1,5 +1,10 @@
 *, *::before, *::after {box-sizing: border-box;}
 
+h1 {
+	text-align: center;
+	font-size: 3em;
+}
+
 h2 {
     font-size: 3em;
     color: darkblue;
@@ -31,8 +36,7 @@ a {
 	transition: background-color 1s;
 }
 
-a:hover {
+a:hover, .active a {
 	background-color: #909;
 	color: #fff;
-	margin-right: 40%;
 }
