@@ -26,7 +26,7 @@ const objetsMangas = [
     {id: 25, img: "./image/R.jpg", name: "Inconnu " },
 ]
 
-//Un Mouse over qui met les titres h2 en japonais.
+// Un Mouse over qui met les titres h2 en japonais.
 
 function mOver(obj, str) {
     obj.innerHTML = str
@@ -34,3 +34,17 @@ function mOver(obj, str) {
   function mOut(obj, str) {
     obj.innerHTML = str
   }
+
+/* ajoute d'un event listener sur les li
+  pour ajouter du fond de couleur
+  */
+
+  let li = document.querySelectorAll('ul li');
+  
+  li.addEventListener('click', function(){
+    for (let i = 0; i < li.length; i++) { // retirer la class 'active' de tous les li
+    if (li[i].classList.contains('active')) li[i].classList.remove('active');
+  }
+  console.log(typeof e);
+  this.classList.add('active'); // placer uniquement sur le li
+});
