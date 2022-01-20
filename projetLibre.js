@@ -41,10 +41,20 @@ function mOver(obj, str) {
 
   let li = document.querySelectorAll('ul li');
   
-  li.addEventListener('click', function(){
+  for (let i = 0; i < li.length; i++) {
+    li[i].addEventListener('click', toggleActiveClass);
+  }
+  
+  function toggleActiveClass(element) {
+    if(element.classList.contains('active')) element.classList.remove('active');
+  }
     for (let i = 0; i < li.length; i++) { // retirer la class 'active' de tous les li
     if (li[i].classList.contains('active')) li[i].classList.remove('active');
   }
   console.log(typeof e);
   this.classList.add('active'); // placer uniquement sur le li
 });
+
+#commentaire
+
+console.log('changement éffectué');
