@@ -1,80 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liste de manga">
+    <link rel="shortcut icon" href="image/logo-3wa.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
 
     <title>Manga</title>
-    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
+    <div class="container">
+        <header class="header flex">
+            <nav class="flex">
+                <div class="logo">
+                    <a href="#">
+                    <img src="image/logo-3wa.png" alt="">
+                </a>
+                </div>
+                <button class='toggle-button'>&#9776;</button>
+                <ul class="navbar flex">
+                    <li class="active"><a href="#boruto">Boruto</a></li>
+                    <li><a href="#onepiece">One piece</a></li>
+                    <li><a href="#dbz">Dragon ball Z</a></li>
+                    <li><a href="#mha">My hero academia</a></li>
+                    <li><a href="#bleach">Bleach</a></li>
+                    <li><a href="#inconnu">Autres</a></li>
+                </ul>
+            </nav>
+        </header>
         <h1>Les Mangas</h1>
-        <nav>
-            <li><a href="#boruto">Boruto</a></li>
-            <li><a href="#onepiece">One piece</a></li>
-            <li><a href="#dbz">Dragon ball Z</a></li>
-            <li><a href="#mha">My hero academia</a></li>
-            <li><a href="#bleach">Bleach</a></li>
-            <li><a href="#inconnu">Autres</a></li>
-        </nav>
-    </header>
-    <main>
-      <article id="boruto">
-          <h2 onmouseover="mOver(this,'BORUTO-ボルト- -NARUTO NEXT GENERATIONS-' )" onmouseout="mOut(this, 'Boruto')" >Boruto</h2>
+        <main class="hero">
+            <article id="boruto">
+                <h2 onmouseover="mOver(this,'BORUTO-ボルト- -NARUTO NEXT GENERATIONS-' )" onmouseout="mOut(this, 'Boruto')">Boruto</h2>
                 <p id="boruto-description"></p>
-                  <img src="./image/4c6ee25042b014561effb42bad9269a9.jpg" alt="Boruto est le fils aîné de Naruto et d' Hinata. Il est également le grand frère d' Himawari, qu'il adore. Il fait équipe avec Sarada et Mitsuki. Son professeur est Konohamaru.">
-                  <img src="./image/R (13).jpg" alt="">
-      </article>
-       <article id="onepiece">
-              <h2 onmouseover="mOver(this,'ワンピース')" onmouseout="mOut(this, 'One Piece')">One Piece</h2>
-              <p id="one-piec-description"></p>
-                  <img src="./image/1008181.jpg" alt="">
-                  <img src="./image/R (3).jpg" alt="">
-                  <img src="./image/thumb-1920-1038723.jpg" alt="">
-                  <img src="./image/wallpapersden.com_one-piece-team-art_2560x1080.jpg" alt="">
-          </article>
+                <img src="./image/4c6ee25042b014561effb42bad9269a9.jpg" alt="Boruto est le fils aîné de Naruto et d' Hinata. Il est également le grand frère d' Himawari, qu'il adore. Il fait équipe avec Sarada et Mitsuki. Son professeur est Konohamaru.">
+                <img src="./image/R (13).jpg" alt="">
+            </article>
+            <article id="onepiece">
+                <h2 onmouseover="mOver(this,'ワンピース')" onmouseout="mOut(this, 'One Piece')">One Piece</h2>
+                <p id="one-piec-description"></p>
+                <img src="./image/1008181.jpg" alt="">
+                <img src="./image/R (3).jpg" alt="">
+                <img src="./image/thumb-1920-1038723.jpg" alt="">
+                <img src="./image/wallpapersden.com_one-piece-team-art_2560x1080.jpg" alt="">
+            </article>
 
-          <article id="dbz">
-              <h2 onmouseover="mOver(this,'ドラゴンボールZ')" onmouseout="mOut(this, 'Dragon Ball')">Dragon Ball Z</h2>
-              <p id="dbz-description"></p>
-                  <img src="./image/R (11).jpg" alt="">
-                  <img src="./image/R (12).jpg" alt="">
-          </article>
+            <article id="dbz">
+                <h2 onmouseover="mOver(this,'ドラゴンボールZ')" onmouseout="mOut(this, 'Dragon Ball')">Dragon Ball Z</h2>
+                <p id="dbz-description"></p>
+                <img src="./image/R (11).jpg" alt="">
+                <img src="./image/R (12).jpg" alt="">
+            </article>
 
-          <article id="mha">
-              <h2 onmouseover="mOver(this,'僕のヒーローアカデミア')" onmouseout="mOut(this, 'My Hero Academia')">My Hero Academia</h2>
-              <p id="mha-description"></p>
-                  <img src="./image/R (14).jpg" alt="">
-                  <img src="./image/R (15).jpg" alt="">
-                  <img src="./image/R (16).jpg" alt="">
-          </article>
+            <article id="mha">
+                <h2 onmouseover="mOver(this,'僕のヒーローアカデミア')" onmouseout="mOut(this, 'My Hero Academia')">My Hero Academia</h2>
+                <p id="mha-description"></p>
+                <img src="./image/R (14).jpg" alt="">
+                <img src="./image/R (15).jpg" alt="">
+                <img src="./image/R (16).jpg" alt="">
+            </article>
 
-          <article id="bleach">
-              <h2 onmouseover="mOver(this,'ブリーチ')" onmouseout="mOut(this, 'Bleach')">Bleach</h2>
-              <p id="bleach-description"></p>
-                  <img src="./image/R (17).jpg" alt="">
-                  <img src="./image/R (18).jpg" alt="">
-          </article>
+            <article id="bleach">
+                <h2 onmouseover="mOver(this,'ブリーチ')" onmouseout="mOut(this, 'Bleach')">Bleach</h2>
+                <p id="bleach-description"></p>
+                <img src="./image/R (17).jpg" alt="">
+                <img src="./image/R (18).jpg" alt="">
+            </article>
 
-          <article id="inconnu">
-              <h2 onmouseover="mOver(this,'Inconnu')" onmouseout="mOut(this, 'Autres')">Autres</h2>
-              <p id="inconnu-description"></p>
-                  <img src="./image/1495292642.jpg" alt="">
-                  <img src="./image/R (1).jpg" alt="">
-                  <img src="./image/R (2).jpg" alt="">
-                  <img src="./image/R (3).jpg" alt="">
-                  <img src="./image/R (4).jpg" alt="">
-                  <img src="./image/R (5).jpg" alt="">
-                  <img src="./image/R (6).jpg" alt="">
-                  <img src="./image/R (7).jpg" alt="">
-                  <img src="./image/R (8).jpg" alt="">
-                  <img src="./image/R (9).jpg" alt="">
-                  <img src="./image/R (10).jpg" alt="">
-                  <img src="./image/R.jpg" alt="">
-          </article>
-      </main>
- </body>
+            <article id="inconnu">
+                <h2 onmouseover="mOver(this,'Inconnu')" onmouseout="mOut(this, 'Autres')">Autres</h2>
+                <p id="inconnu-description"></p>
+                <img src="./image/1495292642.jpg" alt="">
+                <img src="./image/R (1).jpg" alt="">
+                <img src="./image/R (2).jpg" alt="">
+                <img src="./image/R (3).jpg" alt="">
+                <img src="./image/R (4).jpg" alt="">
+                <img src="./image/R (5).jpg" alt="">
+                <img src="./image/R (6).jpg" alt="">
+                <img src="./image/R (7).jpg" alt="">
+                <img src="./image/R (8).jpg" alt="">
+                <img src="./image/R (9).jpg" alt="">
+                <img src="./image/R (10).jpg" alt="">
+                <img src="./image/R.jpg" alt="">
+            </article>
+        </main>
+    </div>
+</body>
 <script src="./projetLibre.js"></script>
+
 </html>
