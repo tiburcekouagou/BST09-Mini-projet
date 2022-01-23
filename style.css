@@ -1,51 +1,127 @@
-*, *::before, *::after {box-sizing: border-box;}
+:root {
+	--color-primary: rgb(40 42 53 / 0.8);
+	--color-secondary: rgb( 0 0 0 / 0.9);
+	--color-light: #fff;
+	--color-dark: rgb(0 0 0 / 0.7);
+  }
+  
+  *,
+  *::before,
+  *::after {
+	box-sizing: border-box;
+  }
+  
+  .flex {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  body {
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+  }
+  
+  .header nav {
+	justify-content: space-between;
+	background-color: var(--color-dark);
+	position: fixed;
+	top: 0;
+	width: min(100%, 650px);
+  }
+  
+  .logo img {
+	max-width: 100%;
+	width: 3rem;
+  }
+  
+  .toggle-button {
+	border: none;
+	position: absolute;
+	top: 0.75rem;
+	right: 1rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	background-color: transparent;
+	color: var(--color-light);
+  }
+  
+  .navbar {
+	margin: 0;
+	padding: 0;
+	display: none;
+  }
+  
+  .navbar li {
+	list-style: none;
+  }
 
-h1 {
-	text-align: center;
-	font-size: 3em;
-}
 
-h2 {
-    font-size: 3em;
-    color: darkblue;
-}
-
-/*centrage du contenu + padding aux articles*/
-.container {
-	margin:0 auto;
-	text-align: center;
-}
-article {
-	padding:2em;
-}
-
-img {
-    max-width: 100%;
-    width: 400px;
-    height: 300px;
-	object-fit: cover;
-}
-
-nav {
-    text-align: center;
-}
-
-li {
-    display: inline-block;
-}
-
-a {
-	background-color: #e4f0f5;
-    text-decoration: none;
-	color: #000;
-	padding: 1rem;
-	border-radius: .5rem;
-	font: 1em monospace;
+  .navbar li + li {
+	  border-top: 1px solid #555;
+  }
+  
+  .navbar li:hover,
+  .active {
+	background-color: var(--color-secondary);
+  }
+  
+  .navbar a {
+	display: block;
+	padding: 1rem 3rem;
+	text-decoration: none;
+	color: var(--color-light);
+  }
+  
+  /* Hero */
+  .container {
+	max-width: 650px;
+	margin: 0 auto;
+	padding-top:3em;
+  }
+  
+  /*
+  main
+  */
+  .hero {
+	width: 90%;
+	margin: 0 auto;
+  }
+  
+  .hero article {
+	max-width: 650px;
 	width: 100%;
-	transition: background-color 1s;
-}
+  }
+  
+  .hero article img {
+	max-width: 100%;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+  }
+  
+  h1 {text-align: center;}
+  
+  /* Media Queries */
+  
+  @media (min-width: 600px) {
+	.toggle-button {
+	  display: none;
+	}
+	
+	.flex {
+	  flex-direction: row;
+	}
 
-a:hover, .active {
-	background-color: #909;
-	color: #fff;
-}
+	.navbar li + li {
+		border-top: none;
+	}
+	
+	.navbar {
+	  display: flex;
+	}
+	
+	.navbar a {
+	  padding: 1rem 0.7rem;
+	}
+  }
+
