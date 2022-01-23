@@ -42,7 +42,8 @@
 	right: 1rem;
 	font-size: 1.5rem;
 	cursor: pointer;
-	background-color: var(--color-light);
+	background-color: transparent;
+	color: var(--color-light);
   }
   
   .navbar {
@@ -53,6 +54,10 @@
   
   .navbar li {
 	list-style: none;
+  }
+
+  .navbar li + li {
+	  border-top: 1px solid #555;
   }
   
   .navbar li:hover,
@@ -103,6 +108,10 @@
 	
 	.flex {
 	  flex-direction: row;
+	}
+
+	.navbar li + li {
+		border-top: none;
 	}
 	
 	.navbar {
