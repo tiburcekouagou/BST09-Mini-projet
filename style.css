@@ -10,6 +10,15 @@ h2 {
     color: darkblue;
 }
 
+/*centrage du contenu + padding aux articles*/
+.container {
+	margin:0 auto;
+	text-align: center;
+}
+article {
+	padding:2em;
+}
+
 img {
     max-width: 100%;
     width: 400px;
@@ -36,7 +45,7 @@ a {
 	transition: background-color 1s;
 }
 
-a:hover, .active a {
+a:hover, .active {
 	background-color: #909;
 	color: #fff;
 }

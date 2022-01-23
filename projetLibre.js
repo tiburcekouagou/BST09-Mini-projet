@@ -26,13 +26,13 @@ const objetsMangas = [
     {id: 25, img: "./image/R.jpg", name: "Inconnu " },
 ]
 
-// Un Mouse over qui met les titres h2 en japonais.
+// Ajout d'un Mouse over qui met les titres h2 en japonais au passage de la souris.
 
 function mOver(obj, str) {
-    obj.innerHTML = str
+    obj.innerHTML = str;
   }
   function mOut(obj, str) {
-    obj.innerHTML = str
+    obj.innerHTML = str;
   }
 
 /* ajoute d'un event listener sur les li
@@ -47,14 +47,27 @@ function mOver(obj, str) {
   
   function toggleActiveClass(element) {
     if(element.classList.contains('active')) element.classList.remove('active');
-  }
+  
     for (let i = 0; i < li.length; i++) { // retirer la class 'active' de tous les li
     if (li[i].classList.contains('active')) li[i].classList.remove('active');
+    }
+    this.classList.add('active'); // placer uniquement sur le li
   }
   console.log(typeof e);
-  this.classList.add('active'); // placer uniquement sur le li
-});
 
-#commentaire
+/* ajout d'une fonction qui affiche le titre lettre par lettre.*/
 
-console.log('changement éffectué');
+ var i=0;
+ var texte = "Les Mangas";
+ var speed = 200;
+
+ window.addEventListener('load', typeWriter());
+ function typeWriter(){
+
+   if(i < texte.length){
+     document.getElementById("titre").innerHTML += texte.charAt(i);
+     /*dans le html on selectionne l'id "titre" pour y écrire et y ajouter un caractère tant que le titre n'est pas complet*/
+     i++;
+     setTimeout(typeWriter, speed);
+   }
+ }
